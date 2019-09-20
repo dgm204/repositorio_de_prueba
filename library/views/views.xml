@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="extra-addons/repositorio_de_prueba/library.list">
+      <field name="name">extra-addons/repositorioDePrueba/library list</field>
+      <field name="model">extra-addons/repositorio_de_prueba/library.extra-addons/repositorio_de_prueba/library</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="extra-addons/repositorio_de_prueba/library.action_window">
+      <field name="name">extra-addons/repositorioDePrueba/library window</field>
+      <field name="res_model">extra-addons/repositorio_de_prueba/library.extra-addons/repositorio_de_prueba/library</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="extra-addons/repositorio_de_prueba/library.action_server">
+      <field name="name">extra-addons/repositorioDePrueba/library server</field>
+      <field name="model_id" ref="model_extra-addons/repositorio_de_prueba/library_extra-addons/repositorio_de_prueba/library"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="extra-addons/repositorioDePrueba/library" id="extra-addons/repositorio_de_prueba/library.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="extra-addons/repositorio_de_prueba/library.menu_1" parent="extra-addons/repositorio_de_prueba/library.menu_root"/>
+    <menuitem name="Menu 2" id="extra-addons/repositorio_de_prueba/library.menu_2" parent="extra-addons/repositorio_de_prueba/library.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="extra-addons/repositorio_de_prueba/library.menu_1_list" parent="extra-addons/repositorio_de_prueba/library.menu_1"
+              action="extra-addons/repositorio_de_prueba/library.action_window"/>
+    <menuitem name="Server to list" id="extra-addons/repositorio_de_prueba/library" parent="extra-addons/repositorio_de_prueba/library.menu_2"
+              action="extra-addons/repositorio_de_prueba/library.action_server"/>
+    -->
+  </data>
+</odoo>
