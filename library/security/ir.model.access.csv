@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_extra-addons/repositorio_de_prueba/library_extra-addons/repositorio_de_prueba/library,extra-addons/repositorio_de_prueba/library.extra-addons/repositorio_de_prueba/library,model_extra-addons/repositorio_de_prueba/library_extra-addons/repositorio_de_prueba/library,,1,0,0,0
+access_library_book_all,access.library.book.all,library.model_library_book,"",1,1,1,0
+access_library_category_all,access.library.book.all,library.model_library_category,,1,1,1,0
