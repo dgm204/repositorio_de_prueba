@@ -48,9 +48,21 @@
         </record>
 
         <!-- Crear menus -->
-        <menuitem id="library_root" name="Library" sequence="0" />
-        <menuitem id="library_category_level" name="Library" sequence="1" parent="library_root"/>
-        <menuitem id="library_book" name="Book" sequence="1" parent="library_category_level" action="action_library_book"/>
+        <menuitem id="library_root"
+                  name="Library"
+                  sequence="0"
+                  groups="library.group_library_user"/>
+
+        <menuitem id="library_category_level"
+                  name="Library"
+                  sequence="1"
+                  parent="library_root"/>
+
+        <menuitem id="library_book"
+                  name="Book"
+                  sequence="1"
+                  parent="library_category_level"
+                  action="action_library_book"/>
 
     </data>
 </odoo>

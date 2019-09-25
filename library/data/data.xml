@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="library_book_1" model="library.book">
+            <field name="name">Cuentos 23</field>
+            <field name="isbn">947275</field>
+        </record>
+        <record id="library_book_2" model="library.book">
+            <field name="name">curso técnico odoo 12</field>
+            <field name="isbn">593759</field>
+        </record>
+    </data>
+</odoo>

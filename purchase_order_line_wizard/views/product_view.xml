@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="product_template_form_view_tipology" model="ir.ui.view">
+            <field name="name">product.template.common.form.tipology</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="tipology"/>
+                </field>
+            </field>
+        </record>
+        <!-- Tree view -->
+        <record id="product_template_tree_view_tipology" model="ir.ui.view">
+            <field name="name">product.template.common.tree.tipology</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_tree_view"/>
+            <field name="arch" type="xml">
+
+                <field name="type" position="after">
+                    <field name="tipology"/>
+                </field>
+
+            </field>
+        </record>
+    </data>
+</odoo>
