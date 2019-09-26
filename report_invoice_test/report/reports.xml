@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="account_invoice_report_test"
+                model="account.invoice"
+                string="Factura Ejemplo"
+                report_type="qweb-pdf"
+                paperformat="paperformat_euro_invoice_test"
+                name="report_invoice_test.invoice_test"
+                file="report_invoice_test.invoice_test"
+                attachment_use="False"
+                attachment="(object.state in ('open','paid')) and
+                 ('INV'+(object.number or '').replace('/','')+'.pdf')"
+        />
+    </data>
+</odoo>
